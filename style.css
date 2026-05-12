@@ -504,3 +504,25 @@ body {
   :root { --panel-w: 280px; }
   .profile-toggle { width: 32px; height: 46px; }
 }
+
+/* ========================
+   PANEL ICON COLORS
+======================== */
+
+/* Address icon — red map pin */
+.panel-info-item:nth-child(1) .panel-info-icon { background: rgba(234,67,53,0.12); color: #ea4335; }
+
+/* Phone icon — green */
+.panel-info-item:nth-child(2) .panel-info-icon { background: rgba(34,197,94,0.12); color: #22c55e; }
+
+/* School icon — blue graduation cap */
+.panel-info-item:nth-child(3) .panel-info-icon { background: rgba(59,130,246,0.12); color: #3b82f6; }
+
+/* Instagram icon — pink */
+.panel-social-btn.instagram .panel-social-icon { background: rgba(225,48,108,0.12); color: #e1306c; }
+
+/* GitHub icon — white/light */
+.panel-social-btn.github .panel-social-icon { background: rgba(224,224,224,0.1); color: #e0e0e0; }
+
+/* Facebook icon — blue */
+.panel-social-btn.facebook .panel-social-icon { background: rgba(24,119,242,0.12); color: #1877f2; }
