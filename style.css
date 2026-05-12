@@ -526,3 +526,15 @@ body {
 
 /* Facebook icon — blue */
 .panel-social-btn.facebook .panel-social-icon { background: rgba(24,119,242,0.12); color: #1877f2; }
+
+/* GitHub icon in contact — white/grey */
+.contact-btn.github-btn i:first-child {
+  background: rgba(224, 224, 224, 0.1);
+  color: #e0e0e0;
+}
+
+/* Facebook icon in contact — blue */
+.contact-btn.facebook-btn i:first-child {
+  background: rgba(24, 119, 242, 0.12);
+  color: #1877f2;
+}
