@@ -539,20 +539,8 @@ body {
   color: #1877f2;
 }
 
-/* Instagram icon in contact — pink icon only */
+/* Instagram icon in contact — pink */
 .contact-btn.instagram-btn i:first-child {
   background: rgba(225, 48, 108, 0.12);
   color: #e1306c;
-}
-
-/* Override the panel hover that was bleeding into contact */
-.contact-btn.instagram-btn:hover {
-  border-color: var(--primary);
-  background: var(--primary-dim);
-}
-
-/* Turn the icon box green when hovered/clicked */
-.contact-btn.instagram-btn:hover i:first-child {
-  background: rgba(100, 255, 180, 0.12);
-  color: var(--primary);
 }
