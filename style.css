@@ -1071,3 +1071,13 @@ body {
   background: rgba(225, 48, 108, 0.12);
   color: #e1306c;
 }
+/* Contact Instagram — force green hover, block pink bleed */
+.contact-links .contact-btn.instagram-btn:hover {
+  border-color: var(--primary) !important;
+  background: var(--primary-dim) !important;
+}
+
+.contact-links .contact-btn.instagram-btn:hover i:first-child {
+  background: rgba(100, 255, 180, 0.12) !important;
+  color: var(--primary) !important;
+}
