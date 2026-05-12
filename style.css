@@ -527,17 +527,7 @@ body {
 /* Facebook icon — blue */
 .panel-social-btn.facebook .panel-social-icon { background: rgba(24,119,242,0.12); color: #1877f2; }
 
-/* GitHub icon in contact — white/grey */
-.contact-btn.github-btn i:first-child {
-  background: rgba(224, 224, 224, 0.1);
-  color: #e0e0e0;
-}
-
-/* Facebook icon in contact — blue */
-.contact-btn.facebook-btn i:first-child {
-  background: rgba(24, 119, 242, 0.12);
-  color: #1877f2;
-}/* ========================
+/* ========================
    ROOT & RESET
 ======================== */
 :root {
@@ -1066,18 +1056,18 @@ body {
 /* Facebook icon — blue */
 .panel-social-btn.facebook .panel-social-icon { background: rgba(24,119,242,0.12); color: #1877f2; }
 
-/* Instagram icon in contact — pink */
+/* ========================
+   CONTACT ICON COLORS
+======================== */
 .contact-btn.instagram-btn i:first-child {
   background: rgba(225, 48, 108, 0.12);
   color: #e1306c;
 }
-/* Contact Instagram — force green hover, block pink bleed */
-.contact-links .contact-btn.instagram-btn:hover {
-  border-color: var(--primary) !important;
-  background: var(--primary-dim) !important;
+.contact-btn.github-btn i:first-child {
+  background: rgba(224, 224, 224, 0.1);
+  color: #e0e0e0;
 }
-
-.contact-links .contact-btn.instagram-btn:hover i:first-child {
-  background: rgba(100, 255, 180, 0.12) !important;
-  color: var(--primary) !important;
+.contact-btn.facebook-btn i:first-child {
+  background: rgba(24, 119, 242, 0.12);
+  color: #1877f2;
 }
