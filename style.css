@@ -283,45 +283,39 @@ body {
 }
 
 /* ========================
-   HERO
+   HERO  — dark, consistent with the rest of the UI
 ======================== */
 .hero {
   position: relative; min-height: 100vh;
   display: flex; align-items: center;
   padding: 0 6%; padding-top: var(--nav-h);
   overflow: hidden;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  /* Dark background matching --bg, with a subtle radial tint for depth */
+  background: var(--bg);
 }
-/* Hero light theme overrides */
-.hero .hero-eyebrow { color: #2563eb; }
-.hero .dot { background: #2563eb; }
-.hero .hero-name { color: #0f172a; }
-.hero .hero-subtitle { color: #64748b; }
-.hero .hero-desc { color: #334155; }
-.hero .hero-scroll { color: #94a3b8; }
-.hero .scroll-line { background: #94a3b8; }
-.hero .scroll-line::after { background: #2563eb; }
-.hero .btn-primary { background: #2563eb; color: #fff; }
-.hero .btn-primary:hover { box-shadow: 0 12px 30px rgba(37,99,235,0.3); }
-.hero .btn-ghost { color: #0f172a; border-color: rgba(15,23,42,0.15); }
-.hero .btn-ghost:hover { border-color: #2563eb; color: #2563eb; }
 
-.hero-bg-grid {
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(37,99,235,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(37,99,235,0.05) 1px, transparent 1px);
-  background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
-}
+/* Subtle green-tinted radial glow in the upper-right (replaces the blue blob) */
 .hero::before {
   content: ''; position: absolute; top: -20%; right: -10%;
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(37,99,235,0.07) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(100,255,180,0.07) 0%, transparent 60%);
   border-radius: 50%; pointer-events: none;
 }
 
+/* Dark grid lines using the same primary-green tint */
+.hero-bg-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(100,255,180,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100,255,180,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+}
+
+/* All text/color tokens now use the dark-theme CSS variables directly —
+   the light-theme overrides that were scoped to .hero have been removed. */
 .hero-content { position: relative; z-index: 1; max-width: 700px; }
+
 .hero-eyebrow {
   display: flex; align-items: center; gap: 10px;
   font-family: var(--mono); font-size: 0.8rem;
@@ -335,9 +329,17 @@ body {
   font-family: var(--serif); font-size: clamp(3.5rem, 9vw, 6.5rem);
   line-height: 1.05; color: var(--heading); overflow: hidden; animation: fadeUp 0.7s 0.2s both;
 }
-.hero-subtitle { font-family: var(--mono); font-size: 1rem; color: var(--text-muted); margin: 16px 0 24px; animation: fadeUp 0.7s 0.35s both; }
-.hero-desc { font-size: 1.05rem; color: var(--text); line-height: 1.8; max-width: 480px; animation: fadeUp 0.7s 0.45s both; }
-.hero-actions { display: flex; gap: 16px; margin-top: 40px; flex-wrap: wrap; animation: fadeUp 0.7s 0.55s both; }
+.hero-subtitle {
+  font-family: var(--mono); font-size: 1rem;
+  color: var(--text-muted); margin: 16px 0 24px; animation: fadeUp 0.7s 0.35s both;
+}
+.hero-desc {
+  font-size: 1.05rem; color: var(--text); line-height: 1.8;
+  max-width: 480px; animation: fadeUp 0.7s 0.45s both;
+}
+.hero-actions {
+  display: flex; gap: 16px; margin-top: 40px; flex-wrap: wrap; animation: fadeUp 0.7s 0.55s both;
+}
 
 .btn-primary {
   display: inline-flex; align-items: center; gap: 10px;
@@ -345,7 +347,11 @@ body {
   text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 0.9rem;
   letter-spacing: 0.03em; transition: var(--transition);
 }
-.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(100,255,180,0.25); gap: 16px; }
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(100,255,180,0.25);
+  gap: 16px;
+}
 
 .btn-ghost {
   display: inline-flex; align-items: center; gap: 10px;
