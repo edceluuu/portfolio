@@ -72,6 +72,8 @@ body {
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
 }
+.logo { font-family: var(--mono); font-size: 1.2rem; font-weight: 500; color: var(--heading); letter-spacing: 0.05em; }
+.logo-bracket { color: var(--primary); }
 .nav-links { display: flex; list-style: none; gap: 40px; }
 .nav-links a {
   font-family: var(--mono); font-size: 0.78rem;
@@ -256,17 +258,17 @@ body {
   content: ''; position: absolute; left: 0; top: 0; bottom: 0;
   width: 3px; border-radius: 0 2px 2px 0;
 }
-.panel-social-btn.gmail::before { background: #ea4335; }
+.panel-social-btn.instagram::before { background: #e1306c; }
 .panel-social-btn.github::before { background: #e0e0e0; }
 .panel-social-btn.facebook::before { background: #1877f2; }
 
 .panel-social-btn:hover { transform: translateX(4px); border-color: rgba(255,255,255,0.12); }
-.panel-social-btn.gmail:hover { background: rgba(234,67,53,0.08); border-color: rgba(234,67,53,0.25); }
+.panel-social-btn.instagram:hover { background: rgba(225,48,108,0.08); border-color: rgba(225,48,108,0.25); }
 .panel-social-btn.github:hover { background: rgba(224,224,224,0.06); border-color: rgba(224,224,224,0.2); }
 .panel-social-btn.facebook:hover { background: rgba(24,119,242,0.08); border-color: rgba(24,119,242,0.25); }
 
 .panel-social-icon { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 0.9rem; flex-shrink: 0; }
-.panel-social-btn.gmail .panel-social-icon { background: rgba(234,67,53,0.12); color: #ea4335; }
+.panel-social-btn.instagram .panel-social-icon { background: rgba(225,48,108,0.12); color: #e1306c; }
 .panel-social-btn.github .panel-social-icon { background: rgba(224,224,224,0.1); color: #e0e0e0; }
 .panel-social-btn.facebook .panel-social-icon { background: rgba(24,119,242,0.12); color: #1877f2; }
 
