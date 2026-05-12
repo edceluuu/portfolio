@@ -525,29 +525,6 @@ body {
 /* Facebook icon — blue */
 .panel-social-btn.facebook .panel-social-icon { background: rgba(24,119,242,0.12); color: #1877f2; }
 
-/* ========================
-   ROOT & RESET
-======================== */
-:root {
-  --bg: #0c0e14;
-  --surface: #13161f;
-  --surface2: #1a1e2a;
-  --border: rgba(255,255,255,0.07);
-  --primary: #64ffb4;
-  --primary-dim: rgba(100,255,180,0.12);
-  --accent: #ff6b6b;
-  --text: #c8d0e0;
-  --text-muted: #5a6380;
-  --heading: #edf2ff;
-  --mono: 'DM Mono', monospace;
-  --serif: 'DM Serif Display', serif;
-  --sans: 'Outfit', sans-serif;
-  --radius: 16px;
-  --nav-h: 72px;
-  --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  --panel-w: 300px;
-}
-
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
