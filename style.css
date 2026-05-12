@@ -924,8 +924,28 @@ body {
   font-size: 0.9rem; color: var(--text); transition: var(--transition);
 }
 .skill-item:hover { border-color: var(--primary); background: var(--primary-dim); color: var(--heading); transform: translateX(6px); }
-.skill-icon { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1rem; }
+.skill-icon { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
 
+/* HTML5 — orange */
+.skill-icon .fa-html5 { color: #e34f26; }
+
+/* JavaScript — yellow */
+.skill-icon .fa-js { color: #f7df1e; }
+
+/* Node.js — green */
+.skill-icon .fa-node-js { color: #539e43; }
+
+/* PostgreSQL — blue */
+.skill-icon .fa-database { color: #336791; }
+
+/* Prisma — indigo */
+.skill-icon .fa-layer-group { color: #5a67d8; }
+
+/* Mobile Dev — android green */
+.skill-icon .fa-mobile-alt { color: #3ddc84; }
+
+/* Express.js — white (shares node icon) */
+.skill-item:nth-child(4) .skill-icon { color: #e0e0e0; }
 /* ========================
    PROJECTS
 ======================== */
@@ -1070,28 +1090,3 @@ body {
   background: rgba(24, 119, 242, 0.12);
   color: #1877f2;
 }
-
-/* ========================
-   SKILL ICON COLORS
-======================== */
-
-/* HTML5 — orange */
-.skill-item:nth-child(1) .skill-icon { color: #e34f26; }
-
-/* JavaScript — yellow */
-.skill-item:nth-child(2) .skill-icon { color: #f7df1e; }
-
-/* Node.js — green */
-.skill-item:nth-child(3) .skill-icon { color: #539e43; }
-
-/* Express.js — white */
-.skill-item:nth-child(4) .skill-icon { color: #e0e0e0; }
-
-/* PostgreSQL — blue */
-.skill-item:nth-child(5) .skill-icon { color: #336791; }
-
-/* Prisma — teal */
-.skill-item:nth-child(6) .skill-icon { color: #5a67d8; }
-
-/* Mobile Dev — green */
-.skill-item:nth-child(7) .skill-icon { color: #3ddc84; }
