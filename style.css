@@ -1059,9 +1059,9 @@ body {
 /* ========================
    CONTACT ICON COLORS
 ======================== */
-.contact-btn.instagram-btn i:first-child {
-  background: rgba(225, 48, 108, 0.12);
-  color: #e1306c;
+.contact-btn.gmail-btn i:first-child {
+  background: rgba(234, 67, 53, 0.12);
+  color: #ea4335;
 }
 .contact-btn.github-btn i:first-child {
   background: rgba(224, 224, 224, 0.1);
