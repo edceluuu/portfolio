@@ -80,8 +80,7 @@ body {
   text-decoration: none; color: var(--text-muted); font-weight: 400;
   letter-spacing: 0.08em; transition: color var(--transition); position: relative;
 }
-.nav-links a::before { content: attr(data-num) " "; color: var(--primary); font-size: 0.65rem; }
-.nav-links a::after {
+.nav-links a::before { content: attr(data-num) " "; color: #ffffff; font-size: 0.65rem; }.nav-links a::after {
   content: ''; position: absolute; bottom: -4px; left: 0;
   width: 0; height: 1px; background: var(--primary); transition: width var(--transition);
 }
